@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Subscribe Card</title>
+  </head>
+  <body>
+    <div class="flex justify-center items-center h-screen bg-zinc-800 px-2">
+      <div class="p-4 bg-zinc-900 rounded-xl">
+        <div class="flex flex-col md:flex-row justify-center items-center">
+          <img
+            src="./assets/email.png"
+            alt="Healty Food"
+            class="h-96 md:h-80 w-full md:w-auto object-cover rounded-xl md:rounded-l-xl md:rounded-r-none transform hover:scale-105 hover:rounded-xl duration-300"
+          />
+          <div class="p-4 md:p-8">
+            <h1 class="text-white text-center md:text-left text-xl font-bold">
+              Get diet and fitness tips in your inbox
+            </h1>
+            <p
+              class="text-white text-center md:text-left text-sm my-4 tracking-tight"
+            >
+              Eat better and exercise better. Sign up for the Diet & Fitness
+              newsletter.
+            </p>
+            <form class="flex flex-col md:flex-row gap-4">
+              <input
+                id="user-mail"
+                type="email"
+                placeholder="Enter your email adress"
+                class="py-2 px-4 rounded-md bg-transparent border border-zinc-500 text-white placeholder:text-sm placeholder:text-center placeholder:md:text-left w-full"
+              />
+              <button
+                type="submit"
+                class="bg-green-400 border border-green-400 py-2 px-4 rounded-md text-sm active:scale-95"
+              >
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
