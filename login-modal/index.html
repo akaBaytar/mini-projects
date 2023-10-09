@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- bootstrap icon -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=Rokkitt:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- tailwind config -->
+    <script>
+      tailwind.config = {
+        theme: {
+          fontFamily: {
+            sans: ['Mulish', 'sans-serif'],
+            mono: ['Rokkitt', 'monospace'],
+          },
+        },
+      };
+    </script>
+    <title>Login Modal</title>
+  </head>
+  <body>
+    <!-- container -->
+    <div
+      class="flex items-center justify-center min-h-screen bg-rose-100 px-8"
+    >
+      <!-- modal -->
+      <div
+        class="relative flex items-center justify-center rounded-xl shadow 2xl bg-white py-4 px-8 md:p-0 md:pl-24 gap-16"
+      >
+        <!-- login form -->
+        <div class="flex flex-col justify-center gap-4 md:my-12">
+          <!-- title -->
+          <h1 class="font-bold font-mono text-3xl">Log In</h1>
+          <!-- description -->
+          <p class="font-thin text-gray-500 text-sm">
+            Log in your account to upload or download contents.
+          </p>
+          <!-- login input -->
+          <input
+            type="email"
+            id="user-email"
+            placeholder="Enter your email adress"
+            class="border-2 px-6 py-4 rounded-md shadow-lg mt-4 placeholder:text-sm tracking-wide"
+          />
+          <!-- login & password buttons -->
+          <div
+            class="flex flex-col md:flex-row gap-4 mt-4 items-center md:justify-between"
+          >
+            <!-- password button -->
+            <a href="#" class="text-cyan-700 text-sm">Forget password</a>
+            <!-- next button -->
+            <button
+              class="flex gap-2 justify-center items-center bg-cyan-700 text-white text-sm rounded-md py-4 w-full md:w-1/2 active:scale-95"
+            >
+              <!-- button text -->
+              <span class="text-xs">Next</span>
+              <!-- button icon -->
+              <i class="bi bi-arrow-right"></i>
+            </button>
+          </div>
+          <!-- divider -->
+          <div class="border w-full mt-8"></div>
+          <!-- login options -->
+          <div class="text-center">
+            <!-- description -->
+            <p class="text-xs text-gray-500 font-thin">or log in with</p>
+            <!-- socials -->
+            <div
+              class="flex flex-col md:flex-row justify-center items-center gap-4 mt-4"
+            >
+              <!-- facebook -->
+              <button
+                class="flex justify-center items-center gap-2 border-2 shadow-lg w-full md:w-1/2 py-3 rounded-md hover:bg-cyan-700 hover:text-white duration-300"
+              >
+                <!-- button icon -->
+                <i class="bi bi-facebook text-2xl"></i>
+                <!-- button text -->
+                <span class="text-sm font-bold">Facebook</span>
+              </button>
+              <!-- google -->
+              <button
+                class="flex justify-center items-center gap-2 border-2 shadow-lg w-full md:w-1/2 py-3 rounded-md hover:bg-cyan-700 hover:text-white duration-300"
+              >
+                <!-- button icon -->
+                <i class="bi bi-google text-2xl"></i>
+                <!-- button text -->
+                <span class="text-sm font-bold">Google</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- image -->
+        <img
+          src="./assets/img.png"
+          alt="login image"
+          class="hidden md:block rounded-r-xl w-[20rem]"
+        />
+        <!-- close button -->
+        <button
+          class="absolute flex justify-center items-center bg-gray-300 md:bg-white rounded-full p-1 w-8 h-8 top-4 right-4 active:scale-95"
+        >
+          <!-- button icon -->
+          <i class="bi bi-x text-black text-2xl"></i>
+        </button>
+      </div>
+    </div>
+  </body>
+</html>
